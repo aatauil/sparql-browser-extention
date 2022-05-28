@@ -3,13 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/language": "^0.20.2",
+    "@codemirror/legacy-modes": "^0.20.0",
+    "@codemirror/lint": "^0.20.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "@uiw/react-codemirror": "^4.7.0",
+    "codemirror": "^5.65.4",
+    "dexie-react-hooks": "^1.1.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "remixicon": "^2.5.0",
+    "sparqljs": "^3.5.2",
+    "use-debounce": "^8.0.1",
     "web-vitals": "^2.1.4"
+  },
+  "overrides": {
+    "@codemirror/state": "0.20.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +47,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
   }
 }
