@@ -3,9 +3,8 @@ import Dexie from 'dexie';
 export const db = new Dexie('myDatabase');
 
 db.version(1).stores({
-  folders: '++id, name',
-  files: '++id, name, folderId, active',
-  tabs: '++id, name, fileId, code',
+  folders: '++id, name, isCollapsed',
+  files: '++id, name, folderId, inTab, focused, code, output, created, modified',
 })
 
 db.open().then(function (db) {
