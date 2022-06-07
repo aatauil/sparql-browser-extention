@@ -15,14 +15,14 @@ function Output() {
     <table className='text-white border-y border-zinc-700 w-full h-full'>
       <thead>
         <tr className='bg-zinc-800 divide-x divide-zinc-700'>
-          {keys.map((key) => <th>{key}</th> )}
+          {keys.map((key) => <th key={key}>{key}</th> )}
         </tr>
       </thead>
       <tbody className='font-medium text-sm'>
         {file.output.map((entry, index) => 
-          <tr key={entry.id} className='text-sm font-light divide-x divide-zinc-700 odd:bg-black/20'>
+          <tr key={index} className='text-sm font-light divide-x divide-zinc-700 odd:bg-black/20'>
             { keys.map((key, index) =>
-              <td className='px-2 ' key={index}>{entry[key].value}</td>
+              <td className='px-2' key={index}>{entry[key].value}</td>
             )}
           </tr>
         )}

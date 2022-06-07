@@ -45,7 +45,7 @@ function TabList() {
         {tabs?.map((tab, index) => (
           <div key={index} className={`flex items-center space-x-2 px-2 py-3 border-b cursor-pointer ${isFocused(tab?.focused)}`} >
 
-            <div className='px-2 text-sm' onClick={() => setTab(tab.id)}>{tab.name}</div>
+            <div className='px-2 text-xs' onClick={() => setTab(tab.id)}>{tab.name}</div>
             <button className='hover:text-red-500 rounded-full text-zinc-700 flex items-center justify-center h-5 w-5 text-xs' onClick={() => deleteTab(tab.id)}>
               <i className="ri-close-line "></i>
             </button>
